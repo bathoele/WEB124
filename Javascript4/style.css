@@ -1,0 +1,57 @@
+
+html {
+  box-sizing: border-box;
+  background: #ffc600;
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+
+body {
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.site-wrap {
+  max-width: 700px;
+  margin: 100px auto;
+  background: white;
+  padding: 40px;
+  text-align: justify;
+}
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+/* Changed tranform and transition styles, added border radius transition */
+.slide-in {
+  transition: all .45s ease-out;
+  border-radius: 100%;
+}
+
+.align-left.slide-in {
+  transform: scale(0) rotate(25deg);
+}
+
+.align-right.slide-in {
+  transform: scale(0) rotate(-25deg);
+}
+
+.slide-in.active {
+  transform: scale(1);
+  border-radius: 0%;
+}
