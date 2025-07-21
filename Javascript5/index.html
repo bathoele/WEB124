@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+  <link rel="icon" href="https://fav.farm/🔥" />
+  <link rel="stylesheet" href="style.css">
+  <meta name="author" content="Brendan Thoele">
+  <meta name="date" content="07-21-2025">
+  <!-- Adapted from https://javascript30.com/
+       Fun with HTML5 Canvas -->
+  <!-- I learned a lot about HTML canvas. I was suprised by how easy it is to get started! 
+  -->
+</head>
+<body>
+  <div class="container">
+    <input type="range" min="1" max="150" value="75" id="slider">
+    <button class="effects" onclick="changeEffect('multiply')">Style 1</button>
+    <button class="effects" onclick="changeEffect('xor')">Style 2</button>
+    <button class="effects" onclick="changeEffect('lighter')">Style 3</button>
+    <button onclick="reset()">Reset</button>
+  </div>
+<canvas id="draw" width="800" height="800"></canvas>
+<script src="index.js"></script>
+</body>
+</html>
